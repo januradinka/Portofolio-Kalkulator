@@ -1,0 +1,1123 @@
+/* DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* WARNA UTAMA WEBSITE */
+
+:root {
+    --black: #191919;
+    --dark: #151515;
+    --orange: #ff8500;
+    --white: #ffffff;
+    --gray: #777777;
+}
+
+/* ---- NAVBAR ---- */
+
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 58px;
+    background: #ffffff;
+    z-index: 1000;
+    padding: 0;
+}
+
+/* ISI NAVBAR */
+
+.nav-wrapper {
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:transparent ;
+}
+
+/* LOGO NAVBAR */
+.logo {
+    color: #111111;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    text-decoration: none;
+}
+
+/* MENU DI NAVBAR */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.nav-menu a {
+    color: #111111;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.nav-menu a:hover {
+    color: var(--orange);
+}
+ 
+/* CONTACT BUTTON */
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111111;
+    border: 1px solid #222222;
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-size: 11px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.contact-button:hover {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: #ffffff;
+}
+
+/* ---- HERO SECTION ---- */
+.hero-section {
+    min-height: 885px;
+    background: #ffffff;
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+.hero-container {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    justify-content: space-between;
+}
+
+.hero-text {
+    width: 60%;
+    padding-left: 25px;
+}
+
+.small-title,
+.section-small-title {
+    color: var(--orange);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.hello {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 12px;
+    letter-spacing: -2px;
+}
+
+.hero-text h1 span {
+    color: #111111;
+}
+
+.hero-description {
+    max-width: 520px;
+    color: #555555;
+    font-size: 17px;
+    line-height: 1.30;
+    margin-bottom: 18px;
+}
+
+.orange-button {
+    display: inline-block;
+    background: var(--orange);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 19px;
+    border-radius: 19px;
+}
+
+.hero-social {
+    display: inline-flex;
+    gap: 12px;
+    margin-left: 12px;
+}
+
+.hero-social a {
+    font-size: 20px;
+    color: #111111;
+}
+
+.hero-image-area {
+    width: 50%;
+    height: 450px;
+    position: relative;
+}
+.hero-image {
+    position: absolute;
+    width: 525px;
+    height: 525px;
+    object-fit: contain;
+    object-position: center bottom;
+    bottom: 0px;
+    right: 60px;
+    z-index: 0.5;
+}
+
+
+/* PEMBATAS HERO SECTION KE ABOUT ME SECTION */
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 60px;
+    background: var(--black);
+    bottom: -25px;
+    left: -5%;
+    transform: rotate(-1.5deg);
+    z-index: 5;
+}
+
+/* ---- ABOUT ME SECTION ---- */
+
+.about-section {
+    min-height: 470px;
+    background: var(--black);
+    color: #ffffff;
+    padding: 95px 0 90px;
+    position: relative;
+}
+
+.about-image-area {
+    height: 690px;
+    position: relative;
+}
+
+.about-image {
+    position: absolute;
+    width: 530px;
+    height: 600px;
+    object-fit: contain;
+    bottom: 100px;
+    left: 10px;
+    z-index: 2;
+}
+
+.about-content {
+    padding-left: 100px;
+}
+
+.about-content .section-small-title {
+padding-bottom: 30px;
+font-size: 12px;
+}
+
+.about-content h2 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.about-description {
+    max-width: 500px;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #dddddd;
+    margin-bottom: 9px;
+}
+
+.education h4{
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.tools h4 {
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.education p {
+    font-size: 11px;
+    color: #dddddd;
+    margin-bottom: 15px;
+}
+
+.tools {
+    margin-top: 10px;
+}
+
+.tool-list {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.tool-item {
+    text-align: center;
+}
+
+.tool-item img {
+    width: 50px;
+    height: 70px;
+    object-fit: contain;
+    margin: auto;
+}
+
+.tool-item span {
+    display: block;
+    font-size: 11px;
+    color: #dddddd;
+    margin-top: 4px;
+}
+
+/* ---- PROJECTS SECTION ---- */
+.projects-section {
+    background: #ffffff;
+    padding: 85px 0 95px;
+    position: relative;
+}
+
+
+/* JUDUL PROJECTS */
+
+.projects-heading {
+    margin-bottom: 48px;
+    padding-bottom: 40px;
+}
+
+.projects-heading .section-small-title {
+    color: #ff8500;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+}
+
+.title-line-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.projects-heading h2 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #111111;
+    margin: 0;
+}
+
+.title-line-wrapper span {
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #222222;
+}
+
+
+/* LIST PROJECTS */
+
+.project-list {
+    padding: 0 8px;
+}
+
+
+/* CARD PROJECTS */
+
+.project-card {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 12px;
+    padding-bottom: 40px;
+    height: 100%;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* GAMBAR PROJECTS */
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* BADGE PROJECTS */
+
+.project-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 17px;
+    margin-bottom: 20px;
+}
+
+.project-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: black;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    box-shadow:
+        0 3px 5px rgba(0, 0, 0, 0.12);
+}
+
+/* KONTEN/ISI DARI CARD TIAP PROJECTS */
+
+.project-content {
+    text-align: center;
+    padding: 0 10px 8px;
+}
+
+
+/* JUDUL CARD PROJECTS */
+
+.project-content h3 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #111111;
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
+
+
+/* DESKRIPSI */
+
+.project-content p {
+    color: #555555;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 auto 18px;
+    padding-bottom: 20px;
+    max-width: 330px;
+    min-height: 58px;
+}
+
+
+/* BUTTON CTA */
+
+.project-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: #ff8500;
+    color: #111111;
+    border-radius: 4px;
+    font-size: 12.3px;
+    font-weight: 500;
+    padding: 7px 12px;
+    transition: 0.3s;
+}
+
+.project-button span {
+    font-size: 15px;
+    line-height: 1;
+}
+
+.project-button:hover {
+    background: #111111;
+    color: #ffffff;
+}
+
+/* PEMBATAS PROJECTS SECTION KE ACHIEVEMENTS SECTION*/
+
+.projects-section::after {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 35px;
+    background: var(--black);
+    bottom: -20px;
+    left: -5%;
+    transform: rotate(-1deg);
+}
+
+
+/* ---- ACHIEVEMENTS SECTION ---- */
+
+.achievement-section {
+    background: var(--black);
+    color: #ffffff;
+    min-height: 600px;
+    padding: 70px 0 65px;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-background {
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+}
+
+.achievement-title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.achievement-title .section-small-title {
+    margin-bottom: 2px;
+}
+
+.achievement-title h2 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.achievement-timeline {
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.timeline-line {
+    position: absolute;
+    width: 2px;
+    background: #ffffff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.achievement-item {
+    position: relative;
+    min-height: 135px;
+    display: grid;
+    grid-template-columns: 1fr 35px 1fr;
+    align-items: center;
+}
+
+.achievement-left .achievement-text {
+    text-align: right;
+    padding-right: 25px;
+}
+
+.achievement-right .achievement-text {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.achievement-text h3 {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+.achievement-text p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #dddddd;
+    margin: 0;
+}
+
+.achievement-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement-image img {
+    width: 325px;
+    max-height: 500px;
+    padding-top: 95px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.achievement-left .achievement-image {
+    grid-column: 3;
+}
+
+.achievement-left .achievement-text {
+    grid-column: 1;
+}
+
+.achievement-left .timeline-dot {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.achievement-right .achievement-image {
+    grid-column: 1;
+}
+
+.achievement-right .timeline-dot {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.achievement-right .achievement-text {
+    grid-column: 3;
+}
+
+.timeline-dot {
+    width: 22px;
+    height: 22px;
+    background: var(--orange);
+    border-radius: 50%;
+    border: 3px solid var(--black);
+    justify-self: center;
+    z-index: 3;
+}
+
+
+/* ---- CONTACT SECTION ---- */
+
+.contact-section {
+    background: #ffffff;
+    padding: 60px 0 55px;
+    position: relative;
+}
+
+
+/* JUDUL */
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.contact-heading .section-small-title {
+    color: #ff8500;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+.contact-heading h2 {
+    color: #111111;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0;
+}
+
+
+/* WRAPER/CONTAINER PEMBUNGKUS FORM */
+
+.contact-form-wrapper {
+    width: 100%;
+    max-width: 795px;
+    margin: 0 auto;
+}
+
+
+/* FORM */
+
+.contact-form {
+    width: 100%;
+    height: 400px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    padding: 44px 18px 29px;
+}
+
+
+/* - INPUT DAN TEXT AREA - */
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 9px;
+    outline: none;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 12px 11px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+
+/* Input */
+.contact-form input {
+    height: 50px;
+}
+
+
+/* Textarea */
+.contact-form textarea {
+    height: 89px;
+    resize: none;
+    padding-top: 13px;
+    margin-bottom: 18px;
+}
+
+
+/* Placeholder */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #d2d2d2;
+
+    opacity: 1;
+}
+
+
+/* Saat diklik */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #dddddd;
+
+    box-shadow:
+        0 0 0 2px rgba(255, 133, 0, 0.05);
+}
+
+
+/* BUTTON CTA SEND MASSAGE*/
+
+
+.contact-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    width: fit-content;
+    margin: 0 auto;
+    border: none;
+    background: #ff8500;
+    color: #111111;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 15px;
+    min-width: 155px;
+    height: 40px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Logo Send */
+.contact-form p {
+    width: 17px;
+    height: 17px;
+    margin-top: 10px;
+    object-fit: contain;
+}
+
+
+/* Hover */
+.contact-form button:hover {
+    background: #111111;
+    color: #ffffff;
+}
+
+
+/* SOCIAL MEDIA */
+
+.contact-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 30px;
+}
+
+
+/* LOGO SOCIAL MEDIA LINK */
+.social-link img {
+    width: 31px;
+    height: 31px;
+    object-fit: contain;
+}
+
+.contact-social .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px; 
+    height: 45px; 
+    border-radius: 50%;
+    background: #000000;
+    flex-shrink: 0; 
+}
+
+/* Hover */
+.social-link:hover {
+    transform: translateY(-5px);
+    background: #ff8500;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+}
+
+/* ---- FOOOTER SECTION ---- */
+
+.footer {
+    background: var(--black);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 13px;
+}
+
+/* ---- CALCULATOR ---- */
+
+.calculator-section {
+    background: #ffffff; /* Warna dasar putih untuk area latar belakang */
+    padding: 90px 0;
+    position: relative;
+}
+
+.calculator-section h2 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #111111;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Kotak Utama Kalkulator */
+.calculator-box {
+    max-width: 340px;
+    margin: 0 auto;
+    background: #191919; /* Hitam sebagai bodi kalkulator */
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Layar Display Kalkulator */
+.calc-display {
+    width: 100%;
+    height: 60px;
+    background: #ffffff; /* Layar putih agar angka terlihat kontras */
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #151515;
+    text-align: right; /* Angka rata kanan seperti kalkulator asli */
+    outline: none;
+}
+
+/* Grid Pembagi Tombol */
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Membagi rata menjadi 4 kolom */
+    gap: 12px; /* Jarak antar tombol */
+}
+
+/* Gaya Tombol Umum */
+.calc-buttons button {
+    height: 55px;
+    background: #252525; /* Tombol angka berwarna hitam keabu-abuan */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Efek Hover Tombol Angka */
+.calc-buttons button:hover {
+    background: #333333;
+}
+
+/* Tombol Operator & Efek Spesifik (+, -, x, /, =) */
+.calc-buttons button:nth-child(2),
+.calc-buttons button:nth-child(3),
+.calc-buttons button:nth-child(4),
+.calc-buttons button:nth-child(8),
+.calc-buttons button:nth-child(12),
+.calc-buttons .btn-equal {
+    background: #ff8500; 
+    color: #ffffff;
+}
+
+
+.calc-buttons button:nth-child(2):hover,
+.calc-buttons button:nth-child(3):hover,
+.calc-buttons button:nth-child(4):hover,
+.calc-buttons button:nth-child(8):hover,
+.calc-buttons button:nth-child(12):hover {
+    background: #e06a00; /* Oranye lebih gelap saat di-hover */
+}
+
+/* Gaya Khusus Tombol Clear (C) */
+.btn-clear {
+    background: #d90429 !important; /* Warna merah agar mencolok untuk reset */
+    color: #ffffff !important;
+}
+
+.btn-clear:hover {
+    background: #b3001b !important;
+}
+
+/* Gaya Khusus Tombol Sama Dengan (=) */
+.btn-equal {
+    grid-row: span 2; /* Membuat tombol '=' memanjang ke bawah melewati 2 baris */
+    height: 122px !important; /* Menyesuaikan tinggi tombol yang memanjang */
+    background: #ff8500 !important;
+}
+
+.btn-equal:hover {
+    background: #e06a00 !important;
+}
+
+
+
+/* ==================================================
+   RESPONSIVE TABLET
+================================================== */
+
+@media (max-width: 991px) {
+
+    .nav-menu {
+        gap: 22px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image-area {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .hero-image {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .hero-orange-shape {
+        right: 50%;
+        transform: translateX(75%);
+    }
+
+    .hero-black-shape {
+        left: 50%;
+        transform: translateX(-80%);
+    }
+
+    .about-content {
+        padding-left: 0;
+        margin-top: 25px;
+    }
+
+    .about-image-area {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .contact-info {
+        padding-left: 20px;
+    }
+}
+
+
+/* ==================================================
+   RESPONSIVE HP
+================================================== */
+
+@media (max-width: 767px) {
+
+    .navbar-custom {
+        position: relative;
+    }
+
+    .nav-wrapper {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-menu a {
+        font-size: 9px;
+    }
+
+    .contact-button {
+        font-size: 8px;
+    }
+
+    .hero-section {
+        padding-top: 60px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .hero-image-area {
+        height: 300px;
+    }
+
+    .hero-orange-shape {
+        width: 190px;
+        height: 120px;
+    }
+
+    .hero-black-shape {
+        width: 225px;
+        height: 130px;
+        left: 50%;
+    }
+
+    .hero-image {
+        width: 210px;
+        height: 250px;
+    }
+
+    .about-section {
+        padding-top: 70px;
+    }
+
+    .about-image {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-orange-shape {
+        left: 50%;
+        transform: translateX(-80%);
+    }
+
+    .about-white-shape {
+        right: 50%;
+        transform: translateX(80%);
+    }
+
+    .achievement-item {
+        grid-template-columns: 25px 1fr;
+        min-height: 180px;
+    }
+
+    .timeline-line {
+        left: 12px;
+    }
+
+    .timeline-dot {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+    }
+
+    .achievement-left .achievement-text,
+    .achievement-right .achievement-text {
+        grid-column: 2 !important;
+        grid-row: 1;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .achievement-left .achievement-image,
+    .achievement-right .achievement-image {
+        display: none;
+    }
+
+    .achievement-text h3 {
+        font-size: 11px;
+    }
+
+    .achievement-text p {
+        font-size: 8px;
+    }
+
+    .contact-info {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .contact-item span {
+        font-size: 8px;
+    }
+}
